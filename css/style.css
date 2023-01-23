@@ -3,6 +3,17 @@
     background-color: #B68C5A;
     border-color: #B68C5A;
 }
+.btn-secondary{
+    color: #B68C5A;
+    background-color: #fff;
+    border-color: #B68C5A;
+}
+
+.custom-icon{
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+  }
 .back-img{
     background-image: url('../images/banner.png');
     height:35rem;
