@@ -1,0 +1,10 @@
+.btn-primary{
+    color: #ffff;
+    background-color: #B68C5A;
+    border-color: #B68C5A;
+}
+.back-img{
+    background-image: url('../images/banner.png');
+    height:34rem;
+    background-size: cover;
+}
