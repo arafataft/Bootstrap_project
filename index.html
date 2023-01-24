@@ -2,303 +2,361 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
 
-    <!-- font  -->
-    <script src="https://kit.fontawesome.com/b444459ecc.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- font  -->
+  <script src="https://kit.fontawesome.com/b444459ecc.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
-        <div class="container-fluid ">
-            <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex justify-content-around mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item pe-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#">Cases</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item pe-3">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <button class="btn btn-outline-success btn-primary ">Free Consultation</button>
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img src="./images/logo2.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex justify-content-around mx-auto mb-2 mb-lg-0">
+          <li class="nav-item pe-3">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#">Cases</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item pe-3">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-outline-success btn-primary " data-bs-toggle="modal"
+            data-bs-target="#Modal">Free Consultation</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">SORRY!!!!...</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- banner -->
-
-    <div class="p-5 text-center bg-image rounded container back-img my-5">
-        <div class="">
-            <div class="d-flex justify-content-center text-center align-items-center h-100">
-                <div class="text-white py-5">
-                    <h1 class="mb-2">We Provide Effective</h1>
-                    <h1 class="mb-3">Legal Solutions</h1>
-                    <div class="d-flex justify-content-center text-center align-items-center">
-                        <p class="w-50">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    </div>
-                    <form class="d-flex justify-content-center text-center align-items-center " >
-                        <input class="form-control w-50 me-2 " type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success btn-primary" type="submit">Search</button>
-                      </form>
+                <div class="modal-body">
+                  <img class="img-fluid h-25 w-25" src="./images/face.png" alt="">
+                  <p>Free Consultation is not available Now</p>
                 </div>
-            </div>
-        </div>
-    </div>
-
-<!-- main section  -->
-    <main>
-        <section class="container py-5">
-            <h2 class="text-center pb-2">The Legal Practice Area</h2>
-            <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-
-            <div class="container my-5 mx-auto">
-                <div class="row">
-                  <div class=" col-md-4 col-lg-4 col-xl-4 border border-top-0 border-start-0 d-flex flex-column align-items-center p-5">
-                    <img class="mx-auto" src="./images/business.png" alt="logo">
-                    <h3 class="text-center py-4" >Business Law</h3>
-                    <p class="text-center px-25"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                  <div class="back-color col-md-4 col-lg-4 col-xl-4 border border-top-0 d-flex flex-column align-items-center p-5 ">
-                    <img class="mx-auto" src="./images/criminal.png" alt="logo">
-                    <h3 class="text-center py-4">Criminal Law</h3>
-                    <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                  <div class=" col-md-4 col-lg-4 col-xl-4 border border-top-0 border-end-0 d-flex flex-column align-items-center p-5">
-                    <img class="mx-auto" src="./images/child.png" alt="logo">
-                    <h3 class="text-center py-4">Child Support</h3>
-                    <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 border-start-0 d-flex flex-column align-items-center p-5">
-                    <img class="mx-auto" src="./images/education.png" alt="logo">
-                    <h3 class="text-center py-4">Education Law</h3>
-                    <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                  <div class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 d-flex flex-column align-items-center p-5">
-                    <img class="mx-auto" src="./images/divorce.png" alt="logo">
-                    <h3 class="text-center py-4">Divorce Law</h3>
-                    <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                  <div class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 border-end-0 d-flex flex-column align-items-center p-5">
-                    <img class="mx-auto" src="./images/tax.png" alt="logo">
-                    <h3 class="text-center py-4">Tax Law</h3>
-                    <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                    <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
-                  </div>
-                </div>
-              </div>
-              
-        </section>
-
-        <!-- what our clint say -->
-
-        <section class="container my-5 py-5 ">
-            <h2 class="text-center pb-2">What Our Client Say</h2>
-            <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="banner-img-1 rounded d-flex justify-content-center align-items-center">
-                        <div class="text-center">
-                            <img src="./images/Awlad-Hossain.png" class="card-img-top w-25 border rounded-circle border-primary" alt="...">
-                            <h1 class="display-5 fw-bold text-light">Awlad Hossain
-                            </h1>
-                            <h3 class="display-12 text-light">UIX Designer</h3>
-                            <p class="text-light">The most informative blockchain news source. Publishing multiple
-                                articles and videos daily.</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="banner-img-2 rounded d-flex justify-content-center align-items-center">
-                        <div class="text-center">
-                            <img src="./images/Awlad-Hossain.png" class="card-img-top w-25 border rounded-circle border-primary" alt="...">
-                            <h1 class="display-5 fw-bold text-light">Awlad Hossain
-                            </h1>
-                            <h3 class="display-12 text-light">UIX Designer</h3>
-                            <p class="text-light">The most informative blockchain news source. Publishing multiple
-                                articles and videos daily.</p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="banner-img-3 rounded d-flex justify-content-center align-items-center">
-                        <div class="text-center">
-                            <img src="./images/Awlad-Hossain.png" class="card-img-top w-25 border rounded-circle border-primary" alt="...">
-                            <h1 class="display-5 fw-bold text-light">Awlad Hossain
-                            </h1>
-                            <h3 class="display-12 text-light">UIX Designer</h3>
-                            <p class="text-light">The most informative blockchain news source. Publishing multiple
-                                articles and videos daily.</p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </section>
-        
-        <!-- frequently ask question -->
-
-        <section class="container my-5 py-5 ">
-          <h2 class="text-center pb-3">Frequently Asked Any Questions</h2>
-          <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-
-          <div class="row row-cols-1 row-cols-md-2 my-5">
-            <div class="col">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item p-2 my-4 rounded">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border p-2 mb-4 rounded">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border p-2 mb-4 rounded">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item border p-2 mb-4 rounded">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Accordion Item #4
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Pay</button>
                 </div>
               </div>
             </div>
-
-            <div class="col">
-              <img class="img-fluid" src="./images/faq.png" alt="">
-            </div>
-          </div>
-
-        </section>
-
-
-    </main>
-
-    <!-- footer  -->
-    <footer class="bg-black">
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-md-6 col-lg-3">
-            <img class="py-4" src="./images/logo.png" alt="">
-            <p class="text-white w-75  mx-auto pb-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white py-4">Usefull Link</h4>
-            <ul class="text-white list-unstyled">
-              <li class="pb-2">Home</li>
-              <li class="pb-2">About Us</li>
-              <li class="pb-2">Cases</li>
-              <li class="pb-2">Blog</li>
-              <li class="pb-2">Contact Us</li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white py-4">Contact Now</h4>
-            <p class="text-white pb-4 w-75 ">555 4th 5t NW, Washington
-              DC 20530, United States</p>
-            <p class="text-white pb-4">+88 01750 000 000
-              <br>+88 01750 000 000</p>
-            <p class="text-white pb-4">info@gmail.com
-              <br>info@gmail.com</p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h4 class="text-white py-4">Subscribe</h4>
-            <p class="text-white pb-4 w-75">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-            <form>
-              <div class="form-group d-flex justify-content-center text-center align-items-center ">
-                <input type="email" class="form-control" placeholder="Enter email">
-                <button type="submit" class="btn btn-primary "><i class="fa-brands fa-telegram"></i></button>
-              </div>
-            </form>
-
           </div>
         </div>
       </div>
-    </footer>
-    
+    </div>
+  </nav>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+
+  <!-- banner -->
+
+  <div class="p-5 text-center bg-image rounded container back-img my-5">
+    <div class="">
+      <div class="d-flex justify-content-center text-center align-items-center h-100">
+        <div class="text-white py-5">
+          <h1 class="mb-2">We Provide Effective</h1>
+          <h1 class="mb-3">Legal Solutions</h1>
+          <div class="d-flex justify-content-center text-center align-items-center">
+            <p class="w-50">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+          </div>
+          <form class="d-flex justify-content-center text-center align-items-center ">
+            <input class="form-control w-50 me-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main section  -->
+  <main>
+    <section class="container py-5">
+      <h2 class="text-center pb-2">The Legal Practice Area</h2>
+      <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour.</p>
+
+      <div class="container my-5 mx-auto">
+        <div class="row">
+          <div
+            class=" col-md-4 col-lg-4 col-xl-4 border border-top-0 border-start-0 d-flex flex-column align-items-center p-5">
+            <img class="mx-auto" src="./images/business.png" alt="logo">
+            <h3 class="text-center py-4">Business Law</h3>
+            <p class="text-center px-25"> There are many variations of passages of Lorem Ipsum available, but the
+              majority have suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+          <div
+            class="back-color col-md-4 col-lg-4 col-xl-4 border border-top-0 d-flex flex-column align-items-center p-5 ">
+            <img class="mx-auto" src="./images/criminal.png" alt="logo">
+            <h3 class="text-center py-4">Criminal Law</h3>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+          <div
+            class=" col-md-4 col-lg-4 col-xl-4 border border-top-0 border-end-0 d-flex flex-column align-items-center p-5">
+            <img class="mx-auto" src="./images/child.png" alt="logo">
+            <h3 class="text-center py-4">Child Support</h3>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 border-start-0 d-flex flex-column align-items-center p-5">
+            <img class="mx-auto" src="./images/education.png" alt="logo">
+            <h3 class="text-center py-4">Education Law</h3>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+          <div class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 d-flex flex-column align-items-center p-5">
+            <img class="mx-auto" src="./images/divorce.png" alt="logo">
+            <h3 class="text-center py-4">Divorce Law</h3>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+          <div
+            class=" col-md-4 col-lg-4 col-xl-4 border border-bottom-0 border-end-0 d-flex flex-column align-items-center p-5">
+            <img class="mx-auto" src="./images/tax.png" alt="logo">
+            <h3 class="text-center py-4">Tax Law</h3>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour.</p>
+            <i class="fa-solid fa-circle-arrow-right btn-secondary custom-icon p-5"></i>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- what our clint say -->
+
+    <section class="container my-5 py-5 ">
+      <h2 class="text-center pb-2">What Our Client Say</h2>
+      <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour.</p>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-img-1 rounded d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                <img src="./images/arafat.jpg" class="card-img-top img-s border rounded-circle border-primary"
+                  alt="...">
+                <h2 class="display-5 fw-bold text-light">Arafat Hossan
+                </h2>
+                <h3 class="display-12 text-light">Web Developer</h3>
+                <p class="text-light">The most informative blockchain news source. Publishing multiple
+                  articles and videos daily.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-img-2 rounded d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                <img src="./images/arafat.jpg" class="card-img-top img-s border rounded-circle border-primary"
+                  alt="...">
+                <h2 class="display-5 fw-bold text-light">Arafat hossan
+                </h2>
+                <h3 class="display-12 text-light">UIX Designer</h3>
+                <p class="text-light">The most informative blockchain news source. Publishing multiple
+                  articles and videos daily.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner-img-3 rounded d-flex justify-content-center align-items-center">
+              <div class="text-center">
+                <img src="./images/Awlad-Hossain.png" class="card-img-top img-s border rounded-circle border-primary"
+                  alt="...">
+                <h2 class="display-5 fw-bold text-light">Awlad Hossain
+                </h2>
+                <h3 class="display-12 text-light">UIX Designer</h3>
+                <p class="text-light">The most informative blockchain news source. Publishing multiple
+                  articles and videos daily.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- frequently ask question -->
+
+    <section class="container my-5 py-5 ">
+      <h2 class="text-center pb-3">Frequently Asked Any Questions</h2>
+      <p class="text-center w-50 mx-auto">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour.</p>
+
+      <div class="row row-cols-1 row-cols-md-2 my-5">
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item p-2 my-4 rounded bg-secondary-subtle">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <h5 class="fw-bold">Difference Between Flexbox and Grid</h5>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Flexbox is best for creating one-dimensional layouts, while Grid is best for creating fixed, two-dimensional layouts. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border p-2 mb-4 rounded bg-secondary-subtle">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="fw-bold">What is the purpose of media query</h5>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  To create responsive designs that adapt to different screen sizes and resolutions. it's used to create a better user experience by tailoring the styles to the specific context in which the webpage is being viewed.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border p-2 mb-4 rounded bg-secondary-subtle">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5 class="fw-bold">What is CSS box model</h5>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  The CSS box model describes the layout of an HTML element as a rectangular box, it defines the element's content, padding, borders, and margins, which are used to determine the total size of an element, including the space around it.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border p-2 mb-4 rounded bg-secondary-subtle">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h5 class="fw-bold">What is semantic tag</h5>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Semantic tags are HTML tags that provide a clear meaning or purpose to the content they enclose, they give structure and meaning to the content on a webpage and make it more accessible and understandable for both users and search engines. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <img class="img-fluid" src="./images/faq.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+  <!-- --------------------
+          footer  
+        --------------------->
+
+  <footer class="bg-black">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-6 col-lg-3">
+          <img class="py-4" src="./images/logo.png" alt="">
+          <p class="text-white w-75  mx-auto pb-4">There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="text-white py-4">Usefull Link</h4>
+          <ul class="text-white list-unstyled">
+            <li class="pb-2">Home</li>
+            <li class="pb-2">About Us</li>
+            <li class="pb-2">Cases</li>
+            <li class="pb-2">Blog</li>
+            <li class="pb-2">Contact Us</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="text-white py-4">Contact Now</h4>
+          <p class="text-white pb-4 w-75 ">555 4th 5t NW, Washington
+            DC 20530, United States</p>
+          <p class="text-white pb-4">+88 01750 000 000
+            <br>+88 01750 000 000
+          </p>
+          <p class="text-white pb-4">info@gmail.com
+            <br>info@gmail.com
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h4 class="text-white py-4">Subscribe</h4>
+          <p class="text-white pb-4 w-75">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+          <form>
+            <div class="form-group d-flex justify-content-center text-center align-items-center">
+              <input type="email" class="form-control" placeholder="Enter email">
+              <button type="submit" class="btn btn-primary "><i class="fa-brands fa-telegram"></i></button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
